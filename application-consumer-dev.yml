@@ -1,1 +1,17 @@
 mytest:  test111
+
+server:
+  port: 80
+
+
+spring:
+  application:
+    name: cloud-payment-consumer
+
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka #集群版本
+    register-with-eureka: true  #默认为true
+    fetch-registry: true    #默认true ,集群环境必须为true
