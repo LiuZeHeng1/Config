@@ -17,8 +17,6 @@ eureka:
     fetch-registry: true    #默认true ,集群环境必须为true
 
 management:
-  server:
-    port: 80
   endpoints:
     web:
       exposure:
